@@ -28,7 +28,7 @@ public class TextViewManager{
 			String hint = (String) msg.obj;
 			final TextView text = (TextView) view.findViewById(id);
 
-			text.setHint(hint);
+			text.setText(hint);
 		}
 	};
 

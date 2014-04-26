@@ -3,6 +3,7 @@
     <!-- The default background of the menu. -->
     <color name="md__defaultBackground">#FF555555</color>
     
-    <color name="theme_green">#00ab6f</color>
+    <color name="theme_green">#37da7e</color>
+    <color name="light_green">#ddffec</color>
 
 </resources>

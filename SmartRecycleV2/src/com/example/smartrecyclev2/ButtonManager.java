@@ -29,7 +29,7 @@ public class ButtonManager{
 			String hint = (String) msg.obj;
 			final Button text = (Button) view.findViewById(id);
 
-			text.setHint(hint);
+			text.setText(hint);
 		}
 	};
 

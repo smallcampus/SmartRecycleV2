@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp"
+    android:layout_margin="10dp"
     android:orientation="vertical" >
     
     <LinearLayout 
@@ -21,17 +21,17 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
         
-        <LinearLayout 
+        <ScrollView 
             android:id="@+id/schedule_suggest_card"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="220dp"
             android:layout_margin="10dp"
             android:orientation="horizontal"
             >
             
             <include layout="@layout/schedule_card_item" />
             
-        </LinearLayout>
+        </ScrollView>
         
     </LinearLayout>
     
@@ -39,6 +39,7 @@
         android:id="@+id/btn_get_point"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
         android:text="@string/get_point"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:background="@drawable/round_btn_bg"
@@ -49,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        
         android:orientation="vertical"
         >
         
@@ -61,6 +63,17 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
         
+        <LinearLayout 
+            android:id="@+id/point_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round_card_bg"
+            >
+            
+            
+        
+        
         <TextView 
             android:id="@+id/point"
             android:layout_width="wrap_content"
@@ -69,35 +82,16 @@
             android:layout_gravity="center"
             android:textAppearance="?android:attr/textAppearanceLarge"
             />
-        
-        <LinearLayout
-            android:id="@+id/point_remain_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:orientation="horizontal"
-             >
             
             <TextView 
                 android:id="@+id/point_remain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:gravity="center"
+                android:layout_gravity="center"
             android:textAppearance="?android:attr/textAppearanceLarge"
                 />
-            
-            <TextView 
-                android:id="@+id/point_remain_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:text="@string/to_go_for"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-                />
-            
-            </LinearLayout>
+
             
             <Button 
                 android:id="@+id/bnt_gift_suggest"
@@ -105,10 +99,9 @@
                 android:layout_height="wrap_content"
                 android:padding="5dp"
                 android:layout_margin="5dp"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:background="@drawable/round_btn_bg"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 />
-            
+            </LinearLayout>
         
         
     </LinearLayout>
