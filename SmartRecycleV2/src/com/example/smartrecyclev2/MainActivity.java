@@ -7,6 +7,7 @@ import android.view.Menu;
 
 import com.example.smartrecyclev2.fragment.AbstractFragment;
 import com.example.smartrecyclev2.fragment.LoginFragment;
+import com.example.smartrecyclev2.helper.LoginHelper;
 import com.example.smartrecyclev2.model.CompanyUser;
 import com.example.smartrecyclev2.model.User;
 
@@ -17,6 +18,7 @@ public class MainActivity extends Activity {
 	public static CompanyUser cUser;
 	
 	public static AbstractFragment mainFragment;
+	public static LoginHelper login = new LoginHelper();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
