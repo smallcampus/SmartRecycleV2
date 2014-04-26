@@ -16,6 +16,24 @@ import com.example.smartrecyclev2.adapter.GiftAdapter.OnGiftSelectedListener;
 import com.example.smartrecyclev2.model.Gift;
 
 public class GiftListFragment extends AbstractFragment{
+	private static List<Gift> d_giftList;
+	public static List<Gift> getDefaultGiftList() {
+		if(d_giftList==null){
+			d_giftList = new ArrayList<Gift>();
+			
+			for (int i=0; i<10; i++) {
+				Gift item = new Gift();
+				item.setCost((i+1)*50);
+				item.setTitle("Coupon #"+i);
+				item.setTargetFlag(false);
+				d_giftList.add(item);
+			}
+		}
+		return d_giftList;
+	}
+	public static Gift getDefaultFavGift(){
+		return getDefaultGiftList().get(0);
+	}
 	
 	private List<Gift> giftList;
 	private GridView result_list;

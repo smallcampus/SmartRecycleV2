@@ -35,7 +35,8 @@ public class LoginHelper {
 	class LoginProcess implements Runnable{
 		@Override
 		public void run() {
-			URL url;
+			onLoginReturn.perform("true");
+			/*URL url;
 			try {
 				//TODO set up URL
 				url = new URL("");
@@ -58,6 +59,7 @@ public class LoginHelper {
 				
 				onLoginfail.perform(null);
 			}
+			*/
 		}
 	}
 }
