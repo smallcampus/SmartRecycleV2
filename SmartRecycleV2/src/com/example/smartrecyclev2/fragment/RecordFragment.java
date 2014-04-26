@@ -28,7 +28,7 @@ public class RecordFragment extends AbstractFragment{
 
 			@Override
 			public void onClick(View arg0) {
-				new LoginFragment(true);
+				new CustomerMainFragment();
 			}
 			
 		});

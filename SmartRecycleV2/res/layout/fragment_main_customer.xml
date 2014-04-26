@@ -22,11 +22,12 @@
             />
         
         <ScrollView 
-            android:id="@+id/schedule_suggest_card"
+            android:id="@+id/schedule_suggest_scroll"
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:layout_margin="10dp"
             android:orientation="horizontal"
+            android:fadeScrollbars="false"
             >
             
             <include layout="@layout/schedule_card_item" />

@@ -18,7 +18,7 @@
        	    android:layout_width="wrap_content"
        	    android:layout_height="wrap_content"
        	    android:layout_margin="5dp"
-       	   	android:src="@drawable/ic_launcher"
+       	   	android:src="@drawable/location"
        	    />
         
        	<AutoCompleteTextView 
@@ -36,7 +36,7 @@
        	    android:layout_width="wrap_content"
        	    android:layout_height="wrap_content"
        	    android:layout_margin="5dp"
-       	   	android:src="@drawable/ic_launcher"
+       	   	android:src="@drawable/gps"
        	    />
     </LinearLayout>
 
@@ -52,8 +52,9 @@
        	    android:id="@+id/icon_time"
        	    android:layout_width="wrap_content"
        	    android:layout_height="wrap_content"
+       	    android:layout_gravity="center"
        	    android:layout_margin="5dp"
-       	   	android:src="@drawable/ic_launcher"
+       	   	android:src="@drawable/clock"
        	    />
         
         <Button 
@@ -63,7 +64,6 @@
             android:layout_margin="5dp"
             android:text="@string/date"
        	    android:textAppearance="?android:attr/textAppearanceMedium"
-       	    android:background="@drawable/round_btn_bg"
             />
         
         
@@ -82,7 +82,7 @@
        	    android:layout_width="wrap_content"
        	    android:layout_height="wrap_content"
        	    android:layout_margin="5dp"
-       	   	android:src="@drawable/ic_launcher"
+       	   	android:src="@drawable/images"
        	    />
         
         <EditText 

@@ -24,7 +24,7 @@ public class GiftListFragment extends AbstractFragment{
 			for (int i=0; i<10; i++) {
 				Gift item = new Gift();
 				item.setCost((i+1)*50);
-				item.setTitle("Coupon #"+i);
+				item.setTitle("LOL RP Card #"+i);
 				item.setTargetFlag(false);
 				d_giftList.add(item);
 			}
@@ -68,7 +68,7 @@ public class GiftListFragment extends AbstractFragment{
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				MainActivity.mainFragment = new GiftDetailFragment();
+				MainActivity.mainFragment = new GiftDetailFragment(position);
 			}});
 	}
 	

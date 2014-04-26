@@ -74,7 +74,8 @@ public class GiftAdapter extends BaseAdapter {
         
         //base.setimage
         //if bookmarked, yellow star else hollow star
-        holder.point.setText(gifts.get(position).getCost().toString());
+        holder.point.setText(gifts.get(position).getCost().toString()
+        		+ " "+ context.getResources().getString(R.string.point));
         
         holder.bookmark.setOnClickListener(new OnClickListener(){
 

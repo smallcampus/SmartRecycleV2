@@ -6,4 +6,5 @@ public class User {
 	public String credits;
 	public String address = "Room 4, 8/F, Choi Po Court, Sheung Shui";
 	public String email = "smallcampustin@gmail.com";
+	public int role;
 }

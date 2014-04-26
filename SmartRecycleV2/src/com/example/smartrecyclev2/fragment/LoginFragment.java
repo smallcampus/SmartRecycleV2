@@ -34,11 +34,16 @@ public class LoginFragment{
 				//		if(args.equals("true")){
 							MainActivity.user.loginID = id.getText().toString();
 							//Toast.makeText(MainActivity.mDrawer.getContext(), "Login success", Toast.LENGTH_LONG).show();
-							if(MainActivity.user.loginID.startsWith("M")){
-								new RecordFragment();
-							}else{
-								new CustomerMainFragment();
-							}
+//							if(MainActivity.user.loginID.startsWith("M")){
+////								new RecordFragment();
+//								
+//								new CustomerMainFragment();
+//							}else{
+//								new CustomerMainFragment();
+//							}
+							
+							MainActivity.user.role = (MainActivity.user.loginID.startsWith("M"))?1:0;
+							new CustomerMainFragment();
 				//		}else{
 							//Toast.makeText(MainActivity.mDrawer.getContext(), "Login fail", Toast.LENGTH_LONG).show();
 				//		}

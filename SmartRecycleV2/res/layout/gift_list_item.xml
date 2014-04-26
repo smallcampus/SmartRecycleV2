@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/base"
+    android:background="@drawable/lol"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
     
@@ -11,7 +12,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_margin="10dp"
-        android:src="@drawable/ic_launcher"
+        android:src="@drawable/star"
         android:clickable="true"
         />
     
@@ -19,10 +20,12 @@
         android:id="@+id/point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_margin="15dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:text="test"
+        android:padding="5dp"
+        android:background="@drawable/round_card_bg"
         />
     
 	

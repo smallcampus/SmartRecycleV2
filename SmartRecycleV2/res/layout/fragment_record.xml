@@ -28,12 +28,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/images" />
 	    
 	    <TextView 
 	        android:id="@+id/type"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
 	        android:text="@string/paper"
 	        android:layout_margin="5dp"
 	        android:textAppearance="?android:attr/textAppearanceLarge"
@@ -53,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/weight" />
 	    
 	    <EditText
 	        android:id="@+id/weight"

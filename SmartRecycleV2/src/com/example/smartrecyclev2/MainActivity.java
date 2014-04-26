@@ -12,6 +12,8 @@ import com.example.smartrecyclev2.fragment.AbstractFragment;
 import com.example.smartrecyclev2.fragment.CustomerMainFragment;
 import com.example.smartrecyclev2.fragment.GiftListFragment;
 import com.example.smartrecyclev2.fragment.LoginFragment;
+import com.example.smartrecyclev2.fragment.ScheduleListFragment;
+import com.example.smartrecyclev2.fragment.SearchFragment;
 import com.example.smartrecyclev2.helper.LoginHelper;
 import com.example.smartrecyclev2.model.CompanyUser;
 import com.example.smartrecyclev2.model.User;
@@ -47,9 +49,12 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				if(arg0.equals(m1)){
-					
-				}else if(arg0.equals(m2)){
 					new CustomerMainFragment();
+				}else if(arg0.equals(m2)){
+					if (user.role==1)
+					new ScheduleListFragment();
+					else
+						new SearchFragment();
 				}else if(arg0.equals(m3)){
 					new GiftListFragment();
 				}
