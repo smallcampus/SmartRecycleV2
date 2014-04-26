@@ -19,7 +19,7 @@ public class LoginFragment extends AbstractFragment{
 	@Override
 	public int getFragmentLayoutId() {
 		// TODO Auto-generated method stub
-		return R.layout.schedule_card_item;
+		return R.layout.fragment_login;
 	}
 
 }

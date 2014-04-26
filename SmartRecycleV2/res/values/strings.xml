@@ -4,6 +4,11 @@
     <string name="app_name">SmartRecycleV2</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    
+    <!-- login -->
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>
 
