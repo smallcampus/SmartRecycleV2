@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\ka yiu\git\SmartRecycle2_2\.metadata\.plugins\org.eclipse.jdt.core
+3909290660.index
+1938152961.index
+1284074322.index
