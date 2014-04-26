@@ -1,5 +1,8 @@
 package com.example.smartrecyclev2.fragment;
 
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -24,23 +27,20 @@ public class CustomerMainFragment extends AbstractFragment{
 		final TextView point = (TextView) MainActivity.mDrawer.findViewById(R.id.point);
 		final TextView remain = (TextView) MainActivity.mDrawer.findViewById(R.id.point_remain);
 		
-		final float[] points = new float[1];
-		points[0] = -1f;
+		point.setText(""+MainActivity.point+" points");
 		
-		pointHelper.setOnPointGetReturn(new EventListener<float[]>(){
+		remain.setText(""+(MainActivity.point-GiftListFragment.getDefaultFavGift().getCost()) + " points");
+		
+		Button submit = ((Button) MainActivity.mDrawer.findViewById(R.id.btn_submit));
+		submit.setText(GiftListFragment.getDefaultFavGift().getTitle());
+		submit.setOnClickListener(new OnClickListener(){
 			@Override
-			public void perform(float[] args) {
+			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
-				points[0] = args[0];
-				new TextViewManager(MainActivity.mDrawer,R.id.point).changeHint(Float.toString(points[0])+" pts");
-				int cost = GiftListFragment.getDefaultFavGift().getCost();
-				new TextViewManager(MainActivity.mDrawer,R.id.point_remain).changeHint(""+(int) (points[0]-cost)+ " pts");
+				new GiftListFragment();
 			}
 		});
-		
-		pointHelper.tryGetPoint(MainActivity.user.loginID);
-		
-		new ButtonManager(MainActivity.mDrawer,R.id.bnt_gift_suggest).changeText(GiftListFragment.getDefaultFavGift().getTitle());
+
 	}
 
 	@Override
