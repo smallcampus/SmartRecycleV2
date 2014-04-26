@@ -39,14 +39,6 @@
         android:inputType="textPassword"
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
-    <View 
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_margin="10dp"
-        android:background="@drawable/separate_bar"
-        
-        />
-    
     <LinearLayout 
         android:id="@+id/login_bar"
         android:layout_width="match_parent"

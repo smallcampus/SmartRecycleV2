@@ -5,9 +5,17 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
+    <string name="point">point(s)</string>
+    
     <!-- login -->
     <string name="register">Register</string>
     <string name="login">Login</string>
+    
+    <!-- Customer main -->
+    <string name="schedule_suggest_title">Coming Collection:</string>
+    <string name="point_remain_title">Points you have:</string>
+    <string name="to_go_for">&#32;to go for</string>
+    <string name="get_point">Get Point!</string>
     
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>

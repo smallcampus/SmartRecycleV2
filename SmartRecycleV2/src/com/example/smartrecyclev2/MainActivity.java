@@ -1,6 +1,7 @@
 package com.example.smartrecyclev2;
 
 import com.example.smartrecyclev2.fragment.AbstractFragment;
+import com.example.smartrecyclev2.fragment.LoginFragment;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -18,7 +19,7 @@ public class MainActivity extends FragmentActivity {
 		//set up Fragment manager
 		changeFragmentHandler = new ChangeFragmentHandler(getSupportFragmentManager());
 
-		//TODO changeFragmentHandler.changeFragment(IntroductionFragment.id);
+		changeFragmentHandler.changeFragment(Constants.FRAGMENT_LOGIN);
 	}
 
 	@Override
@@ -44,14 +45,15 @@ public class MainActivity extends FragmentActivity {
 		public void changeFragment(int fragmentId){
 			AbstractFragment fragment = null;
 			switch(fragmentId){
-			//TODO case IntroductionFragment.id:
+			case Constants.FRAGMENT_LOGIN:
+				fragment = new LoginFragment();
 			}
 
 			FragmentTransaction transaction = manager.beginTransaction();
 
 			// Replace whatever is in the fragment_container view with this fragment,
 			// and add the transaction to the back stack so the user can navigate back
-			//TODO transaction.replace(R.id.fragment_container, fragment);
+			transaction.replace(R.id.container, fragment);
 			transaction.addToBackStack(null);
 
 			// Commit the transaction

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/schedule_suggest_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        
+        <TextView 
+            android:id="@+id/schudle_suggest_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/schedule_suggest_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        
+        <LinearLayout 
+            android:id="@+id/schedule_suggest_card"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            >
+            
+            <include layout="@layout/schedule_card_item" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/btn_get_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_point"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        
+        />
+    
+    <LinearLayout 
+        android:id="@+id/gift_point_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        >
+        
+        <TextView 
+            android:id="@+id/gift_point_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/point_remain_title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        
+        <TextView 
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            />
+        
+        <LinearLayout
+            android:id="@+id/point_remain_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+             >
+            
+            <TextView 
+                android:id="@+id/point_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            
+            <TextView 
+                android:id="@+id/point_remain_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/to_go_for"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            
+            </LinearLayout>
+            
+            <Button 
+                android:id="@+id/bnt_gift_suggest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+            
+        
+        
+    </LinearLayout>
+    
+    
+
+    
+</LinearLayout>

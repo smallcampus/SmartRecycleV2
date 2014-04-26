@@ -6,8 +6,6 @@ import com.example.smartrecyclev2.R;
 
 public class LoginFragment extends AbstractFragment{
 	
-	public static final int id = Constants.FRAGMENT_LOGIN;
-	
 	//UI param
 
 	@Override
