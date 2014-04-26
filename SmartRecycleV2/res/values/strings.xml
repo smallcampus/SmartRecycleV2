@@ -47,6 +47,13 @@
     <string name="end">End Record</string>
     <string name="weight">Weight</string>
     
+    <!-- profile -->
+    <string name="phone">Phone:</string>
+    <string name="address">Address:</string>
+    <string name="change_password">Change Password</string>
+    <string name="save">Save</string>
+    
+    <!-- Schedule card -->
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>
 
