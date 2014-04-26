@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/item1"
+        style="@style/MenuDrawer.Widget.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/star"
+        android:onClick="onDrawerItemClick"
+        android:tag="ME"
+        android:text="ME" />
+
+    <TextView
+        android:id="@+id/item2"
+        style="@style/MenuDrawer.Widget.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/schedule"
+        android:onClick="onDrawerItemClick"
+        android:tag="Schedule"
+        android:text="Schedule" />
+    
+        <TextView
+        android:id="@+id/item3"
+        style="@style/MenuDrawer.Widget.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/present"
+        android:onClick="onDrawerItemClick"
+        android:tag="Gift"
+        android:text="Gift" />
+
+</LinearLayout>
