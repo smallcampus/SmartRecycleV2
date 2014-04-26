@@ -6,6 +6,7 @@
     <string name="action_settings">Settings</string>
     
     <string name="point">point(s)</string>
+    <string name="paper">Paper</string>
     
     <!-- login -->
     <string name="register">Register</string>
@@ -16,6 +17,11 @@
     <string name="point_remain_title">Points you have:</string>
     <string name="to_go_for">&#32;to go for</string>
     <string name="get_point">Get Point!</string>
+    
+    <!-- search -->
+    <string name="place">Place</string>
+    <string name="date">Date</string>
+    <string name="search">Search</string>
     
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>
