@@ -12,6 +12,7 @@ public class LoginFragment extends AbstractFragment{
 
 	@Override
 	protected void setUI() {
+		String test;
 		
 	}
 
