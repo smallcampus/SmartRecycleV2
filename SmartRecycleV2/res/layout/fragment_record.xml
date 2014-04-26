@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical" >
+    
+	<Button 
+	    android:id="@+id/btn_end"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:text="@string/end"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    />
+	
+	<LinearLayout 
+	    android:id="@+id/type_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_margin="10dp"
+	    >
+	    
+	     <ImageView
+            android:id="@+id/icon_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher" />
+	    
+	    <TextView 
+	        android:id="@+id/type"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/paper"
+	        android:layout_margin="5dp"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        />
+	</LinearLayout>
+    
+	<LinearLayout 
+	    android:id="@+id/weight_bar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_margin="10dp"
+	    >
+	    
+	     <ImageView
+            android:id="@+id/icon_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_launcher" />
+	    
+	    <EditText
+	        android:id="@+id/weight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:hint="@string/weight"
+	        android:inputType="numberDecimal"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/btn_submit"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/done"
+	    android:textAppearance="?android:attr/textAppearanceLarge" 
+	    />
+	
+</LinearLayout>

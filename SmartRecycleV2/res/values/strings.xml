@@ -38,6 +38,15 @@
     <string name="point_colon">Point:</string>
     <string name="get_it">Get it!</string>
     
+    <!-- code -->
+    <string name="input_code_title">Please input your code</string>
+    <string name="output_code_title">Please show this code to customer</string>
+    <string name="done">Done!</string>
+    
+    <!-- recycle -->
+    <string name="end">End Record</string>
+    <string name="weight">Weight</string>
+    
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>
 
