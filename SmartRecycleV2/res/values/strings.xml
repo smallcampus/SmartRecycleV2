@@ -9,7 +9,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     
-    <string name="point">point(s)</string>
+    <string name="point">Point(s)</string>
     <string name="paper">Paper</string>
     
     <!-- login -->
@@ -32,6 +32,11 @@
     
     <!-- gift list -->
     <string name="filter">Filter</string>
+    
+    <!-- gift -->
+    <string name="name">Name:</string>
+    <string name="point_colon">Point:</string>
+    <string name="get_it">Get it!</string>
     
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>
