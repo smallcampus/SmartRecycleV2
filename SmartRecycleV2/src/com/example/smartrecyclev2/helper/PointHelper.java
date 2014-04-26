@@ -34,6 +34,9 @@ public class PointHelper {
 		getFlag = true;
 		
 		//TODO
+		float[] f = new float[1];
+		f[0] = 400;
+		onPointGetReturn.perform(f);
 	}
 	
 	boolean addFlag = false;

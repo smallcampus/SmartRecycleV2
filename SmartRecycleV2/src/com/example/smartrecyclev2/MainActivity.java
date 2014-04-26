@@ -14,8 +14,8 @@ import com.example.smartrecyclev2.model.User;
 public class MainActivity extends Activity {
 
 	public static MenuDrawer mDrawer;
-	public static User user;
-	public static CompanyUser cUser;
+	public static User user = new User();
+	public static CompanyUser cUser = new CompanyUser();
 	
 	public static AbstractFragment mainFragment;
 	public static LoginHelper login = new LoginHelper();

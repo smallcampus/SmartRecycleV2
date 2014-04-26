@@ -22,7 +22,7 @@ public class LoginHelper {
 	String url;
 	String id;
 	String password;
-	boolean isLoaggedIn = false;
+	public boolean isLoaggedIn = false;
 	
 	public void tryLogin(String url, String id, String password){
 		this.id = id;
@@ -59,9 +59,5 @@ public class LoginHelper {
 				onLoginfail.perform(null);
 			}
 		}
-	}
-	
-	public boolean isLoggedIn(){
-		return this.isLoaggedIn;
 	}
 }

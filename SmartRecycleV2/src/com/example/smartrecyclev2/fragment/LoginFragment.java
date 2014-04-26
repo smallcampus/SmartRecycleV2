@@ -31,6 +31,7 @@ public class LoginFragment extends AbstractFragment{
 					@Override
 					public void perform(String args) {
 						if(args.equals("true")){
+							MainActivity.user.loginID = id.getText().toString();
 							Toast.makeText(MainActivity.mDrawer.getContext(), "Login success", Toast.LENGTH_LONG).show();
 							MainActivity.mainFragment = new CustomerMainFragment();							
 						}else{
@@ -48,7 +49,9 @@ public class LoginFragment extends AbstractFragment{
 		((Button) MainActivity.mDrawer.findViewById(R.id.register)).setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View arg0) {
-				// TODO Auto-generated method stub
+				MainActivity.user.loginID = id.getText().toString();
+				MainActivity.login.isLoaggedIn = true;
+				
 				Toast.makeText(MainActivity.mDrawer.getContext(), "Register Completed", Toast.LENGTH_LONG).show();
 				MainActivity.mainFragment = new CustomerMainFragment();
 			}

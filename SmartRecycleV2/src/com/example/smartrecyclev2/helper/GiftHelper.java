@@ -9,7 +9,22 @@ public class GiftHelper {
 		this.onGiftGetReturn = onGiftGetReturn;
 	}
 	
-	void tryGetGifts(){
+	private EventListener<Gift> onFavGiftGetReturn;
+	public void setOnFavGiftGetReturn(EventListener<Gift> eventListener) {
+		this.onFavGiftGetReturn = eventListener;
+	}
+	
+	boolean getFlag = false;
+	public void tryGetGifts(){
+		getFlag = true;
+	
+	}
+	
+	boolean getFavFlag = false;
+	public void tryGetFavGift(String id){
+		getFavFlag = true;
 		
 	}
+	
+	
 }
