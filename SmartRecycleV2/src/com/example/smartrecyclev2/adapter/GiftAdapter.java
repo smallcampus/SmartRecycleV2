@@ -5,13 +5,16 @@ import java.util.zip.Inflater;
 
 import android.app.Activity;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.smartrecyclev2.R;
@@ -57,10 +60,11 @@ public class GiftAdapter extends BaseAdapter {
         ViewHolder holder;
         if(rowView==null){  
             holder=new ViewHolder();
-            LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+            LayoutInflater inflater = (LayoutInflater)context
+                    .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
               rowView = inflater.inflate(R.layout.gift_list_item, arg2, false);                  
-              holder.base=(LinearLayout)rowView.findViewById(R.id.base);
-              holder.bookmark=(ImageButton)rowView.findViewById(R.id.bookmark);
+              holder.base=(RelativeLayout)rowView.findViewById(R.id.base);
+              holder.bookmark=(ImageView)rowView.findViewById(R.id.bookmark);
               holder.point=(TextView)rowView.findViewById(R.id.point);
               rowView.setTag(holder);
         }
@@ -70,7 +74,7 @@ public class GiftAdapter extends BaseAdapter {
         
         //base.setimage
         //if bookmarked, yellow star else hollow star
-        holder.point.setText(gifts.get(position).getCost());
+        holder.point.setText(gifts.get(position).getCost().toString());
         
         holder.bookmark.setOnClickListener(new OnClickListener(){
 
@@ -81,7 +85,12 @@ public class GiftAdapter extends BaseAdapter {
 			}});
         
         
-		return view;
+		return rowView;
+	}
+	
+	public void bookmarkGift(int position){
+		gifts.get(position).setTargetFlag(!gifts.get(position).isTargetFlag());
+		notifyDataSetChanged();
 	}
 
 	public interface OnGiftSelectedListener{
@@ -89,8 +98,8 @@ public class GiftAdapter extends BaseAdapter {
 	}
 	
 	private class ViewHolder {
-		public LinearLayout base;
-		public ImageButton bookmark;
+		public RelativeLayout base;
+		public ImageView bookmark;
 		public TextView point;
 	}
 }

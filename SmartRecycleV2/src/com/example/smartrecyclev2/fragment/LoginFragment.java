@@ -32,7 +32,7 @@ public class LoginFragment extends AbstractFragment{
 					public void perform(String args) {
 						if(args.equals("true")){
 							Toast.makeText(MainActivity.mDrawer.getContext(), "Login success", Toast.LENGTH_LONG).show();
-							MainActivity.mainFragment = new CustomerMainFragment();							
+							MainActivity.mainFragment = new CustomerMainFragment();	
 						}else{
 							Toast.makeText(MainActivity.mDrawer.getContext(), "Login fail", Toast.LENGTH_LONG).show();
 						}
@@ -50,7 +50,8 @@ public class LoginFragment extends AbstractFragment{
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				Toast.makeText(MainActivity.mDrawer.getContext(), "Register Completed", Toast.LENGTH_LONG).show();
-				MainActivity.mainFragment = new CustomerMainFragment();
+//				MainActivity.mainFragment = new CustomerMainFragment();
+				MainActivity.mainFragment = new GiftListFragment();
 			}
 		});
 	}
