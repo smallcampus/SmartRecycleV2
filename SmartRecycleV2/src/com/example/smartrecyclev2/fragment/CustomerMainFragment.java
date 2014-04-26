@@ -3,18 +3,12 @@ package com.example.smartrecyclev2.fragment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.smartrecyclev2.ButtonManager;
-import com.example.smartrecyclev2.EditTextManager;
-import com.example.smartrecyclev2.EventListener;
 import com.example.smartrecyclev2.MainActivity;
 import com.example.smartrecyclev2.R;
-import com.example.smartrecyclev2.TextViewManager;
 import com.example.smartrecyclev2.helper.GiftHelper;
 import com.example.smartrecyclev2.helper.PointHelper;
-import com.example.smartrecyclev2.model.Gift;
 
 public class CustomerMainFragment extends AbstractFragment{
 
