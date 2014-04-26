@@ -6,14 +6,14 @@
     android:layout_gravity="center"
     android:orientation="vertical" >
     
-	<TextView 
+	<TextView
 	    android:id="@+id/code_title"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
 	    android:text="@string/input_code_title"
 	    android:textAppearance="?android:attr/textAppearanceLarge"
-	    android:layout_margin="10dp"
-	    />
+	    android:textSize="18dp" />
 	
 	<EditText
 	    android:id="@+id/code"
@@ -21,7 +21,9 @@
 	    android:layout_height="wrap_content"
 	    android:layout_margin="10dp"
 	    android:inputType="number"
-	    android:textAppearance="?android:attr/textAppearanceLarge" />
+	    android:text="46778211"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textSize="40sp" />
 	
 	<Button 
 	    android:id="@+id/btn_submit"

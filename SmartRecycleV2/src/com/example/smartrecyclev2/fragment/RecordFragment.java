@@ -15,11 +15,20 @@ public class RecordFragment extends AbstractFragment{
 		super();
 		MainActivity.mDrawer.setContentView(R.layout.fragment_record);
 		
-		((Button) MainActivity.mDrawer.findViewById(R.id.btn_end)).setOnClickListener(new OnClickListener(){
+		((Button) MainActivity.mDrawer.findViewById(R.id.btn_submit)).setOnClickListener(new OnClickListener(){
 
 			@Override
 			public void onClick(View arg0) {
 				new CodeFragment(true);
+			}
+			
+		});
+		
+		((Button) MainActivity.mDrawer.findViewById(R.id.btn_end)).setOnClickListener(new OnClickListener(){
+
+			@Override
+			public void onClick(View arg0) {
+				new LoginFragment(true);
 			}
 			
 		});

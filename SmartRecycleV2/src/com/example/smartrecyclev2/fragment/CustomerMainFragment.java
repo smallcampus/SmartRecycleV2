@@ -10,10 +10,8 @@ import com.example.smartrecyclev2.R;
 import com.example.smartrecyclev2.helper.GiftHelper;
 import com.example.smartrecyclev2.helper.PointHelper;
 
-public class CustomerMainFragment extends AbstractFragment{
+public class CustomerMainFragment{
 
-	GiftHelper giftHelper = new GiftHelper();
-	PointHelper pointHelper = new PointHelper();
 	public CustomerMainFragment() {
 		super();
 		MainActivity.mDrawer.setContentView(R.layout.fragment_main_customer);
@@ -23,9 +21,9 @@ public class CustomerMainFragment extends AbstractFragment{
 		
 		point.setText(""+MainActivity.point+" points");
 		
-		remain.setText(""+(MainActivity.point-GiftListFragment.getDefaultFavGift().getCost()) + " points");
+		remain.setText(""+(-MainActivity.point+GiftListFragment.getDefaultFavGift().getCost()) + " points");
 		
-		Button submit = ((Button) MainActivity.mDrawer.findViewById(R.id.btn_submit));
+		Button submit = ((Button) MainActivity.mDrawer.findViewById(R.id.bnt_gift_suggest));
 		submit.setText(GiftListFragment.getDefaultFavGift().getTitle());
 		submit.setOnClickListener(new OnClickListener(){
 			@Override
@@ -35,18 +33,15 @@ public class CustomerMainFragment extends AbstractFragment{
 			}
 		});
 
-	}
+		((Button) MainActivity.mDrawer.findViewById(R.id.btn_get_point)).setOnClickListener(new OnClickListener(){
 
-	@Override
-	protected void setUI() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public int getFragmentLayoutId() {
-		// TODO Auto-generated method stub
-		return 0;
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				new CodeFragment(false);
+			}
+			
+		});
 	}
 
 }

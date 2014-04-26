@@ -41,14 +41,15 @@ public class CodeFragment{
 					// TODO Auto-generated method stub
 					if(((EditText) MainActivity.mDrawer.findViewById(R.id.code)).getText().toString().startsWith("4")){
 						Toast.makeText(MainActivity.mDrawer.getContext(), "10 points has been added", Toast.LENGTH_LONG).show();
-						MainActivity.mainFragment = new CustomerMainFragment();
 						MainActivity.point +=10;
+						new CustomerMainFragment();
 					}else{
 						Toast.makeText(MainActivity.mDrawer.getContext(), "Invalid code", Toast.LENGTH_LONG).show();
 					}
 					
 				}
 			});
+			((EditText) MainActivity.mDrawer.findViewById(R.id.code)).setText("");
 		}
 	}
 	

@@ -12,12 +12,13 @@ import com.example.smartrecyclev2.EventListener;
 import com.example.smartrecyclev2.MainActivity;
 import com.example.smartrecyclev2.R;
 
-public class LoginFragment extends AbstractFragment{
+public class LoginFragment{
 	
 
-	public LoginFragment(){
+	public LoginFragment(boolean isWorker){
 		MainActivity.mDrawer.setContentView(R.layout.fragment_login);
 		
+		final boolean _isWorker = isWorker;
 		final EditText id = (EditText) MainActivity.mDrawer.findViewById(R.id.username);
 		final EditText pw = (EditText) MainActivity.mDrawer.findViewById(R.id.password);
 		
@@ -33,7 +34,11 @@ public class LoginFragment extends AbstractFragment{
 				//		if(args.equals("true")){
 							MainActivity.user.loginID = id.getText().toString();
 							//Toast.makeText(MainActivity.mDrawer.getContext(), "Login success", Toast.LENGTH_LONG).show();
-							MainActivity.mainFragment = new CustomerMainFragment();	
+							if(MainActivity.user.loginID.startsWith("M")){
+								new RecordFragment();
+							}else{
+								new CustomerMainFragment();
+							}
 				//		}else{
 							//Toast.makeText(MainActivity.mDrawer.getContext(), "Login fail", Toast.LENGTH_LONG).show();
 				//		}
@@ -57,17 +62,6 @@ public class LoginFragment extends AbstractFragment{
 				MainActivity.mainFragment = new GiftListFragment();
 			}
 		});
-	}
-	
-	@Override
-	protected void setUI() {
-
-	}
-
-	@Override
-	public int getFragmentLayoutId() {
-		// TODO Auto-generated method stub
-		return R.layout.fragment_login;
 	}
 
 }
