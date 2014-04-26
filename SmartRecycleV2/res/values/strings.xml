@@ -19,7 +19,7 @@
     <!-- Customer main -->
     <string name="schedule_suggest_title">Coming Collection:</string>
     <string name="point_remain_title">Points you have:</string>
-    <string name="to_go_for">&#32;to go for</string>
+    <string name="to_go_for">%s point(s) to go for</string>
     <string name="get_point">Get Point!</string>
     
     <!-- search -->
@@ -55,6 +55,6 @@
     
     <!-- Schedule card -->
     <string name="dash">&#32;-&#32;</string>
-    <string name="arrive">Arrive!</string>
+    <string name="arrive">Start!</string>
 
 </resources>
