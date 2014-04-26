@@ -27,6 +27,9 @@
     <string name="date">Date</string>
     <string name="search">Search</string>
     
+    <!-- detail -->
+    <string name="more_schedule">Find more schedule for this company</string>
+    
     <string name="dash">&#32;-&#32;</string>
     <string name="arrive">Arrive!</string>
 
