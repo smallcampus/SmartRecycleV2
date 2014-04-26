@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/get_point"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        
+        android:background="@drawable/round_btn_bg"
         />
     
     <LinearLayout 
@@ -101,9 +101,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:background="@null"
                 android:layout_margin="5dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/round_btn_bg"
                 />
             
         

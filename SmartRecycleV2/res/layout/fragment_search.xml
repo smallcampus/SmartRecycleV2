@@ -63,7 +63,7 @@
             android:layout_margin="5dp"
             android:text="@string/date"
        	    android:textAppearance="?android:attr/textAppearanceMedium"
-       	    android:background="@null"
+       	    android:background="@drawable/round_btn_bg"
             />
         
         
@@ -103,6 +103,6 @@
         android:layout_height="wrap_content"
         android:text="@string/search"
         android:layout_margin="10dp"
-        
+        android:background="@drawable/round_btn_bg"
         />
 </LinearLayout>
