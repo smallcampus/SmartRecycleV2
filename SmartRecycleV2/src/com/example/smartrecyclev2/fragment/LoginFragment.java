@@ -33,7 +33,7 @@ public class LoginFragment extends AbstractFragment{
 						if(args.equals("true")){
 							MainActivity.user.loginID = id.getText().toString();
 							Toast.makeText(MainActivity.mDrawer.getContext(), "Login success", Toast.LENGTH_LONG).show();
-							MainActivity.mainFragment = new CustomerMainFragment();							
+							MainActivity.mainFragment = new CustomerMainFragment();	
 						}else{
 							Toast.makeText(MainActivity.mDrawer.getContext(), "Login fail", Toast.LENGTH_LONG).show();
 						}
@@ -53,7 +53,8 @@ public class LoginFragment extends AbstractFragment{
 				MainActivity.login.isLoaggedIn = true;
 				
 				Toast.makeText(MainActivity.mDrawer.getContext(), "Register Completed", Toast.LENGTH_LONG).show();
-				MainActivity.mainFragment = new CustomerMainFragment();
+//				MainActivity.mainFragment = new CustomerMainFragment();
+				MainActivity.mainFragment = new GiftListFragment();
 			}
 		});
 	}
