@@ -17,6 +17,8 @@ public class MainActivity extends Activity {
 	public static User user = new User();
 	public static CompanyUser cUser = new CompanyUser();
 	
+	public static int point = 400;
+	
 	public static AbstractFragment mainFragment;
 	public static LoginHelper login = new LoginHelper();
 	
