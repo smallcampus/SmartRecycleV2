@@ -30,6 +30,7 @@
 	    android:layout_margin="10dp"
 	    android:text="@string/done"
 	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:background="@drawable/round_btn_bg"
 	    />
     
 </LinearLayout>

@@ -98,7 +98,8 @@
             android:layout_margin="5dp"
             android:padding="10dp"
             android:text="@string/change_password"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/round_btn_bg" />
 	    
 	    <Button
             android:id="@+id/btn_save"
@@ -109,7 +110,8 @@
             android:layout_margin="5dp"
             android:padding="10dp"
             android:text="@string/save"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/round_btn_bg" />
 	    
 	    
 	</LinearLayout>

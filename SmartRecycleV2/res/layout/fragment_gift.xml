@@ -71,6 +71,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/get_it"
+        android:background="@drawable/round_btn_bg"
         />
 
 </LinearLayout>

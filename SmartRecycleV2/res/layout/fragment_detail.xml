@@ -23,6 +23,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_margin="10dp"
         android:text="@string/more_schedule"
+        android:background="@drawable/round_btn_bg"
         />
 
 </LinearLayout>

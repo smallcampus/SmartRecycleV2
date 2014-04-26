@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/filter"
             android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="@drawable/round_btn_bg"
             />
         
     </LinearLayout>
