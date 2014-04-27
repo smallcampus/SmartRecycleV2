@@ -80,7 +80,6 @@ public class ScheduleListFragment extends AbstractFragment{
 				item.setCompany("ABC company");
 				scheduleList.add(item);
 				
-				Log.d("test", "i="+i+"|time="+item.getStartTime());
 			}
 		
 	}

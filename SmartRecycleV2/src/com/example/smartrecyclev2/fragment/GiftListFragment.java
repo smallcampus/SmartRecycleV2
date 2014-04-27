@@ -48,7 +48,6 @@ public class GiftListFragment extends AbstractFragment{
 
 	@Override
 	protected void setUI() {
-		Log.d("test", "setui");
 		result_list = (GridView) MainActivity.mDrawer.findViewById(R.id.result_list);
 		
 		initGiftList();
@@ -73,7 +72,6 @@ public class GiftListFragment extends AbstractFragment{
 	}
 	
 	private void initGiftList(){
-		Log.d("test", "initGiftlist");
 		giftList = new ArrayList<Gift>();
 		
 		for (int i=0; i<10; i++) {
